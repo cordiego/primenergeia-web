@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Cpu, Zap, Activity, ShieldCheck } from 'lucide-react';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import './GridControl.css';
 
 const GridControl = () => {
+  const data = useMemo(() => {
+    const arr = [];
+    for (let i = 0; i <= 100; i++) {
+      const t = i / 100;
+      const raw = Math.sin(2 * Math.PI * 1 * t) + 0.3 * Math.sin(2 * Math.PI * 3 * t);
+      const clean = Math.sin(2 * Math.PI * 1 * t);
+      arr.push({ time: i, Reactive: Number(raw.toFixed(3)), Predictive: Number(clean.toFixed(3)) });
+    }
+    return arr;
+  }, []);
+
   return (
     <section id="control" className="section">
       <div className="container">
@@ -49,20 +61,28 @@ const GridControl = () => {
           </div>
           
           <div className="control-visual animate-fade-up delay-2">
-            <div className="glass-panel visual-card">
+            <div className="glass-panel visual-card" style={{ padding: '1rem' }}>
               <div className="visual-header">
                 <Activity size={18} className="text-cyan" />
-                Live Telemetry Simulation
+                Live Telemetry: Harmonic Compensation
               </div>
-              <div className="chart-mockup">
-                <svg viewBox="0 0 400 150" className="sine-wave">
-                  <path className="wave wave-bad" d="M0,75 Q50,0 100,75 T200,75 T300,75 T400,75" fill="none" stroke="rgba(255,50,50,0.5)" strokeWidth="2"/>
-                  <path className="wave wave-good" d="M0,75 Q50,50 100,75 T200,75 T300,75 T400,75" fill="none" stroke="#00d1ff" strokeWidth="3"/>
-                </svg>
-                <div className="chart-labels">
-                  <span className="label-bad">Reactive (Legacy)</span>
-                  <span className="label-good">Predictive (PRIMEnergeia)</span>
-                </div>
+              <div style={{ width: '100%', height: 300, marginTop: '1rem' }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={data} margin={{ top: 5, right: 5, bottom: 5, left: -20 }}>
+                    <XAxis dataKey="time" hide />
+                    <YAxis domain={[-1.5, 1.5]} stroke="rgba(255,255,255,0.2)" tick={{fill: '#94a3b8'}} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: '#0d1117', border: '1px solid #1f2937', borderRadius: '8px' }}
+                      itemStyle={{ color: '#fff' }}
+                    />
+                    <Line type="monotone" dataKey="Reactive" stroke="rgba(255,50,50,0.6)" strokeWidth={2} dot={false} isAnimationActive={true} animationDuration={2000} />
+                    <Line type="monotone" dataKey="Predictive" stroke="#00d1ff" strokeWidth={3} dot={false} isAnimationActive={true} animationDuration={2000} />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+              <div className="chart-labels">
+                <span className="label-bad" style={{color: 'rgba(255,50,50,0.8)'}}>Reactive (Distorted)</span>
+                <span className="label-good" style={{color: '#00d1ff', fontWeight: 600}}>PRIME (Clean)</span>
               </div>
             </div>
           </div>

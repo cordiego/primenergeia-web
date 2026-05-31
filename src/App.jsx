@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import GridControl from './components/GridControl';
 import GlobalMarkets from './components/GlobalMarkets';
 import GranasPlatform from './components/GranasPlatform';
+import ScienceVisualizations from './components/ScienceVisualizations';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <GridControl />
         <GlobalMarkets />
         <GranasPlatform />
+        <ScienceVisualizations />
       </main>
       
       <footer className="glass" style={{ padding: '3rem 0', marginTop: '4rem', borderBottom: 'none', borderLeft: 'none', borderRight: 'none', borderRadius: '0' }}>
