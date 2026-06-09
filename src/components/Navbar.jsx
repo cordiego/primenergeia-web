@@ -25,9 +25,14 @@ const Navbar = () => {
           <a href="#control">Grid Control</a>
           <a href="#markets">Markets</a>
           <a href="#granas">Granas</a>
+          <a href="#hydrogen">Hydrogen & NH₃</a>
+          <a href="#tech-stack">Architecture</a>
         </nav>
         
         <div className="nav-actions">
+          <a href="mailto:diego@primenergeia.com" className="btn btn-primary btn-sm" style={{marginRight: '1rem'}}>
+            Partner With Us
+          </a>
           <a href="https://primenergeia-sovereign.streamlit.app" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
             <Activity size={16} /> Live Dashboard
           </a>

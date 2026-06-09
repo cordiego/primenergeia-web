@@ -1,0 +1,158 @@
+.hydrogen-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .hydrogen-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.hydrogen-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .hydrogen-text {
+    grid-template-columns: 1fr 1fr;
+  }
+  .action-wrapper {
+    grid-column: 1 / -1;
+  }
+}
+
+.info-card {
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background: var(--bg-surface-hover);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.card-icon {
+  margin-bottom: 1rem;
+  display: inline-flex;
+  padding: 0.75rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.diagram-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.diagram-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-glass);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-align: center;
+  background: rgba(255,255,255,0.02);
+}
+
+.flow-diagram {
+  padding: 2rem;
+  background: radial-gradient(circle at center, rgba(16,185,129,0.05) 0%, transparent 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.albedo-svg {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.diagram-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.2);
+  border-top: 1px solid var(--border-glass);
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-val {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* SVG Animations */
+@keyframes pulseSlow {
+  0% { opacity: 0.8; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.8; transform: scale(0.95); }
+}
+
+.pulse-slow {
+  transform-origin: center;
+  animation: pulseSlow 4s infinite ease-in-out;
+}
+
+@keyframes flowDown {
+  0% { stroke-dashoffset: 10; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.beam-down {
+  animation: flowDown 1s linear infinite;
+}
+
+@keyframes flowUp {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 10; }
+}
+
+.beam-up {
+  animation: flowUp 1s linear infinite;
+}
+
+@keyframes flowEnergy {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.energy-flow, .output-flow {
+  animation: flowEnergy 2s infinite;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}

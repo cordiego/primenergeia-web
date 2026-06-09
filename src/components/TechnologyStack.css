@@ -1,0 +1,75 @@
+.stack-container {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stack-layer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.stack-layer:hover {
+  transform: scale(1.02);
+  background: var(--bg-surface-hover);
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.layer-icon {
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.layer-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.stack-connector {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--border-glass), transparent);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Specific glowing borders for each layer */
+.layer-market:hover {
+  border-left: 4px solid var(--accent-cyan);
+}
+
+.layer-control:hover {
+  border-left: 4px solid var(--accent-purple);
+}
+
+.layer-conversion:hover {
+  border-left: 4px solid var(--accent-green);
+}
+
+.layer-generation:hover {
+  border-left: 4px solid #facc15; /* Yellow */
+}

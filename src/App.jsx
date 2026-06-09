@@ -5,6 +5,8 @@ import GridControl from './components/GridControl';
 import GlobalMarkets from './components/GlobalMarkets';
 import GranasPlatform from './components/GranasPlatform';
 import ScienceVisualizations from './components/ScienceVisualizations';
+import HydrogenAmmonia from './components/HydrogenAmmonia';
+import TechnologyStack from './components/TechnologyStack';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <GridControl />
         <GlobalMarkets />
         <GranasPlatform />
+        <HydrogenAmmonia />
+        <TechnologyStack />
         <ScienceVisualizations />
       </main>
       
