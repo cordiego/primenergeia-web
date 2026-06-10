@@ -7,8 +7,12 @@ const GlobalMarkets = () => {
     <section id="markets" className="section alt-bg">
       <div className="container">
         <div className="section-header text-center animate-fade-up">
-          <h2 className="section-title">Operating in <span className="text-gradient">17 Global Markets</span></h2>
-          <p className="section-desc">A unified architecture covering major ISOs across the Americas, Europe, and Asia-Pacific.</p>
+          <h2 className="section-title">The <span className="text-gradient">PRIME Grid</span></h2>
+          <p className="section-desc" style={{ marginBottom: '2rem' }}>A unified, zero-trust infrastructure connecting 17 global energy markets. Maximizing yield for asset owners through continuous, high-frequency HJB telemetry.</p>
+        </div>
+
+        <div className="global-map-container animate-fade-up delay-1" style={{ width: '100%', marginBottom: '3rem', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0, 209, 255, 0.2)', boxShadow: '0 0 30px rgba(0, 209, 255, 0.1)' }}>
+          <img src="/prime_grid_asset.png" alt="PRIME Grid Global Network Map" style={{ width: '100%', display: 'block' }} />
         </div>
 
         <div className="market-cards">

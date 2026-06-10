@@ -9,32 +9,21 @@ const GranasPlatform = () => {
         <div className="granas-layout">
           
           <div className="granas-visual animate-fade-up">
-            <div className="glass-panel hex-grid-bg">
-              <div className="molecule-anim">
-                <div className="node n1"></div>
-                <div className="node n2"></div>
-                <div className="node n3"></div>
-                <div className="node n4"></div>
-                <svg className="connections">
-                  <line x1="20%" y1="20%" x2="80%" y2="20%"/>
-                  <line x1="80%" y1="20%" x2="80%" y2="80%"/>
-                  <line x1="80%" y1="80%" x2="20%" y2="80%"/>
-                  <line x1="20%" y1="80%" x2="20%" y2="20%"/>
-                </svg>
-              </div>
-              <div className="ai-overlay text-cyan">
-                <Database size={16}/> Processing Bayesian Optimization...
+            <div className="glass-panel" style={{ padding: '0', overflow: 'hidden' }}>
+              <img src="/granas_asset.png" alt="Granas Autonomous Solar Facility" style={{ width: '100%', display: 'block' }} />
+              <div className="ai-overlay text-cyan" style={{ bottom: '20px', left: '20px', background: 'rgba(0,0,0,0.7)' }}>
+                <Database size={16}/> Autonomous Deployment Sequence Active
               </div>
             </div>
           </div>
 
           <div className="granas-text animate-fade-up delay-1">
             <h2 className="section-title">
-              Granas: Perovskite <br />
-              <span className="text-gradient">Bayesian Optimization</span>
+              Granas Platform: <br />
+              <span className="text-gradient">Autonomous Energy</span>
             </h2>
             <p className="granas-desc">
-              Granas is PRIMEnergeia’s advanced perovskite solar platform - engineered for &gt;33% power conversion efficiency. Not just better panels. A self-driving materials lab.
+              Zero human intervention. Infinite scalability. Granas deploys fully autonomous, robotic bifacial solar farms engineered for &gt;33% power conversion efficiency. We turn barren land into sovereign energy machines.
             </p>
             
             <div className="specs-grid">
