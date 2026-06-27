@@ -3,6 +3,13 @@ import { Droplet, Sun, Zap, Database } from 'lucide-react';
 import './HydrogenAmmonia.css';
 
 const HydrogenAmmonia = () => {
+  const handleContact = (e) => {
+    e.preventDefault();
+    const user = 'diego';
+    const domain = 'primenergeia.com';
+    window.location.href = `mailto:${user}@${domain}`;
+  };
+
   return (
     <section id="hydrogen" className="section alt-bg">
       <div className="container">
@@ -48,7 +55,7 @@ const HydrogenAmmonia = () => {
             </div>
             
             <div className="action-wrapper mt-4">
-               <a href="mailto:diego@primenergeia.com" className="btn btn-primary">Discuss NH₃ Partnerships</a>
+               <a href="#" onClick={handleContact} className="btn btn-primary">Discuss NH₃ Partnerships</a>
             </div>
           </div>
           
