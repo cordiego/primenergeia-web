@@ -176,3 +176,28 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   pointer-events: none;
 }
+
+/* Global Responsive Base */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .glass-panel {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
-import { LayoutDashboard, Activity, Database, Settings, ShieldCheck, Zap, Search, Bell } from 'lucide-react';
+import { LayoutDashboard, Activity, Database, Settings, ShieldCheck, Zap, Search, Bell, Menu, X } from 'lucide-react';
 import './DashboardLayout.css';
 import ContactModal from './ContactModal';
 
 const DashboardLayout = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="dashboard-layout">
+      {/* Sidebar Overlay for Mobile */}
+      <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} onClick={() => setIsSidebarOpen(false)}></div>
+
       {/* Sidebar Navigation */}
-      <aside className="dashboard-sidebar glass">
+      <aside className={`dashboard-sidebar glass ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-brand">
-          <ShieldCheck size={28} className="text-cyan pulse-glow" />
-          <span className="brand-text">PRIME<span className="text-purple">nergeia</span></span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ShieldCheck size={28} className="text-cyan pulse-glow" />
+            <span className="brand-text">PRIME<span className="text-purple">nergeia</span></span>
+          </div>
+          <button className="mobile-close-btn" onClick={() => setIsSidebarOpen(false)}>
+            <X size={24} />
+          </button>
         </div>
         
         <nav className="sidebar-nav">
@@ -47,6 +56,9 @@ const DashboardLayout = ({ children }) => {
         {/* Top Header */}
         <header className="dashboard-header glass">
           <div className="header-left">
+            <button className="mobile-menu-btn" onClick={() => setIsSidebarOpen(true)}>
+              <Menu size={24} className="text-cyan" />
+            </button>
             <h2 className="header-title">Sovereign Intelligence Layer</h2>
           </div>
           <div className="header-right">
