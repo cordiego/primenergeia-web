@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, AlertTriangle } from 'lucide-react';
+import { Activity, AlertTriangle, ChevronDown, ChevronUp } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Area, AreaChart } from 'recharts';
 import GlobalMarkets from './GlobalMarkets';
 import GranasPlatform from './GranasPlatform';
@@ -11,6 +11,14 @@ import './Dashboard.css';
 const Dashboard = () => {
   const [data, setData] = useState([]);
   const [disturbanceActive, setDisturbanceActive] = useState(false);
+  const [isDashboardVisible, setIsDashboardVisible] = useState(true);
+
+  useEffect(() => {
+    // Hide dashboard by default on mobile to prevent taking up the whole screen
+    if (window.innerWidth <= 768) {
+      setIsDashboardVisible(false);
+    }
+  }, []);
 
   useEffect(() => {
     let initData = [];
@@ -56,8 +64,23 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container" id="dashboard-top">
-      {/* The 4 Stat Cards */}
-      <div className="stats-grid animate-fade-up">
+      
+      {/* Dashboard Toggle for Mobile/Desktop */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '-1rem' }}>
+        <button 
+          className="btn btn-outline" 
+          onClick={() => setIsDashboardVisible(!isDashboardVisible)}
+          style={{ padding: '0.5rem 1rem', fontSize: '0.875rem', zIndex: 10 }}
+        >
+          {isDashboardVisible ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          {isDashboardVisible ? 'Hide Telemetry' : 'Show Telemetry'}
+        </button>
+      </div>
+
+      {isDashboardVisible && (
+        <>
+          {/* The 4 Stat Cards */}
+          <div className="stats-grid animate-fade-up">
         <div className="glass-panel stat-card dashboard-card">
           <div className="stat-value text-cyan">99.9%</div>
           <div className="stat-label">System Availability Target</div>
@@ -142,7 +165,9 @@ const Dashboard = () => {
           <span className="legend-item"><span className="legend-box purple"></span> Solar PCE Optimization</span>
           <span className="legend-item"><span className="legend-box green"></span> Green H₂ Yield</span>
         </div>
-      </div>
+        </div>
+        </>
+      )}
 
       {/* Additional Dashboard Widgets in a Masonry Grid */}
       <div className="dashboard-widgets-grid">
