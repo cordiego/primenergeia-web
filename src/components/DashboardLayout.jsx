@@ -25,26 +25,26 @@ const DashboardLayout = ({ children }) => {
         </div>
         
         <nav className="sidebar-nav">
-          <a href="#dashboard-top" className="nav-item active">
+          <a href="#dashboard-top" className="nav-item active" onClick={() => setIsSidebarOpen(false)}>
             <LayoutDashboard size={20} />
             <span>Command Center</span>
           </a>
-          <a href="#hydrogen" className="nav-item">
+          <a href="#hydrogen" className="nav-item" onClick={() => setIsSidebarOpen(false)}>
             <Activity size={20} />
             <span>Solar to H₂</span>
           </a>
-          <a href="#stack" className="nav-item">
+          <a href="#stack" className="nav-item" onClick={() => setIsSidebarOpen(false)}>
             <Zap size={20} />
             <span>Tech Stack</span>
           </a>
-          <a href="#markets" className="nav-item">
+          <a href="#markets" className="nav-item" onClick={() => setIsSidebarOpen(false)}>
             <Database size={20} />
             <span>Global Markets</span>
           </a>
         </nav>
 
         <div className="sidebar-footer">
-          <a href="#" className="nav-item">
+          <a href="#" className="nav-item" onClick={() => setIsSidebarOpen(false)}>
             <Settings size={20} />
             <span>System Config</span>
           </a>
