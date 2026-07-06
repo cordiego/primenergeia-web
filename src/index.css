@@ -32,7 +32,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   width: 100vw;
-  overflow: hidden; /* Dashboard layout handles scrolling internally */
+  overflow: hidden; /* Dashboard layout handles scrolling internally on desktop */
 }
 
 /* Glassmorphism Utilities */
@@ -178,6 +178,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Global Responsive Base */
+@media (max-width: 1024px) {
+  body, html {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 14px;

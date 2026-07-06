@@ -235,6 +235,21 @@
 
 /* Responsive Layout */
 @media (max-width: 1024px) {
+  .dashboard-layout {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    flex-direction: column;
+  }
+
+  .dashboard-main {
+    overflow: visible;
+  }
+
+  .dashboard-content {
+    overflow: visible;
+  }
+
   .dashboard-sidebar {
     position: fixed;
     top: 0;
