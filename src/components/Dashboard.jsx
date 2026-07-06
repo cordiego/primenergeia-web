@@ -11,14 +11,9 @@ import './Dashboard.css';
 const Dashboard = () => {
   const [data, setData] = useState([]);
   const [disturbanceActive, setDisturbanceActive] = useState(false);
-  const [isDashboardVisible, setIsDashboardVisible] = useState(true);
-
-  useEffect(() => {
-    // Hide dashboard by default on mobile to prevent taking up the whole screen
-    if (window.innerWidth <= 768) {
-      setIsDashboardVisible(false);
-    }
-  }, []);
+  const [isDashboardVisible, setIsDashboardVisible] = useState(
+    typeof window !== 'undefined' ? window.innerWidth > 768 : true
+  );
 
   useEffect(() => {
     let initData = [];
@@ -26,7 +21,7 @@ const Dashboard = () => {
       initData.push({
         time: i,
         stability: 99.8 + (Math.random() * 0.4),
-        pce: 33.5 + (Math.random() * 0.2),
+        pce: 46.2 + (Math.random() * 0.2),
         h2: 25.0 + (Math.random() * 0.1)
       });
     }
@@ -47,7 +42,7 @@ const Dashboard = () => {
         const newPoint = {
           time: timeIndex++,
           stability: Number(newStab.toFixed(2)),
-          pce: Number((33.5 + (Math.random() * 0.3)).toFixed(2)),
+          pce: Number((46.2 + (Math.random() * 0.3)).toFixed(2)),
           h2: Number((25.0 + (Math.random() * 0.2)).toFixed(2))
         };
         return [...prev.slice(1), newPoint];

@@ -23,7 +23,7 @@ const GranasPlatform = () => {
               <span className="text-gradient">Autonomous Energy</span>
             </h2>
             <p className="granas-desc">
-              Zero human intervention. Infinite scalability. Granas deploys fully autonomous, robotic bifacial solar farms engineered for &gt;33% power conversion efficiency. We turn barren land into sovereign energy machines.
+              Zero human intervention. Infinite scalability. Granas deploys fully autonomous, robotic bifacial solar farms engineered for &gt;46.2% power conversion efficiency. We turn barren land into sovereign energy machines.
             </p>
             
             <div className="specs-grid">
@@ -32,7 +32,7 @@ const GranasPlatform = () => {
                 <div className="spec-label">Search Space</div>
               </div>
               <div className="spec-item glass">
-                <div className="spec-val text-cyan">33.5%</div>
+                <div className="spec-val text-cyan">46.2%</div>
                 <div className="spec-label">Target PCE</div>
               </div>
             </div>
