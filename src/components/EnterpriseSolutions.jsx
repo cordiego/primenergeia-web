@@ -19,7 +19,8 @@ const EnterpriseSolutions = () => {
           <h3>Granas Hardware Deployment</h3>
           <p>Purchase and deploy our autonomous, robotic bifacial solar infrastructure. Turn barren land into self-optimizing energy farms with zero human intervention.</p>
           <ul className="solution-features">
-            <li>&gt;46.24% Perovskite PCE</li>
+            <li>28.98% Empirical PCE (SDL)</li>
+            <li>47.2% Modeled Optimal</li>
             <li>Robotic Panel Adjustment</li>
             <li>Albedo Light Amplification</li>
           </ul>

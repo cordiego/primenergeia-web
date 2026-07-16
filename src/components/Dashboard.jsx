@@ -21,7 +21,7 @@ const Dashboard = () => {
       initData.push({
         time: i,
         stability: 99.8 + (Math.random() * 0.4),
-        pce: 46.24 + (Math.random() * 0.2),
+        pce: 28.98 + (Math.random() * 0.2),
         h2: 25.0 + (Math.random() * 0.1)
       });
     }
@@ -42,7 +42,7 @@ const Dashboard = () => {
         const newPoint = {
           time: timeIndex++,
           stability: Number(newStab.toFixed(2)),
-          pce: Number((46.24 + (Math.random() * 0.3)).toFixed(2)),
+          pce: Number((28.98 + (Math.random() * 0.3)).toFixed(2)),
           h2: Number((25.0 + (Math.random() * 0.2)).toFixed(2))
         };
         return [...prev.slice(1), newPoint];
