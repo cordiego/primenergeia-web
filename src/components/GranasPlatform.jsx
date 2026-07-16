@@ -23,7 +23,7 @@ const GranasPlatform = () => {
               <span className="text-gradient">Autonomous Energy</span>
             </h2>
             <p className="granas-desc">
-              Zero human intervention. Infinite scalability. Granas deploys fully autonomous, robotic bifacial solar farms. Granas cells demonstrate 28.98% PCE (empirical, SDL-verified), with a technical profitability threshold at 33% and a modeled optimal-deployment threshold of 47.2% under our real-options framework. We turn barren land into sovereign energy machines.
+              Zero human intervention. Infinite scalability. Granas deploys fully autonomous, robotic bifacial solar farms. Our in-house framework has identified the VZA-400 architecture with a <strong>projected 28.98% PCE</strong> (simulation-stage). Physical fabrication and independent validation are pending. Beyond the lab, our real-options framework identifies a 47.2% threshold as the exact financial trigger at which capital scaling becomes optimal.
             </p>
             
             <div className="specs-grid">
@@ -33,11 +33,11 @@ const GranasPlatform = () => {
               </div>
               <div className="spec-item glass">
                 <div className="spec-val text-cyan">28.98%</div>
-                <div className="spec-label">Verified PCE</div>
+                <div className="spec-label">Projected PCE</div>
               </div>
               <div className="spec-item glass">
                 <div className="spec-val text-purple">47.2%</div>
-                <div className="spec-label">Modeled Max</div>
+                <div className="spec-label">Deploy Trigger</div>
               </div>
               <div className="spec-item glass">
                 <div className="spec-val text-cyan">9</div>
