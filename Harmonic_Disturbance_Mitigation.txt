@@ -1,132 +1,19 @@
+================================================================================
+PRIMEnergeia Sovereign Intelligence Layer
+Event ID: #8492
+Type: Harmonic Disturbance Mitigation (Grid Anomaly)
+Node: VZA-400
+Timestamp: 2026-08-15 03:42:11 GMT
+================================================================================
 
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
+[03:42:11.012] WARNING: Phase B voltage THD (Total Harmonic Distortion) spiked to 8.4%.
+[03:42:11.045] ALERT: Grid anomaly detected. Potential CENACE penalty risk: HIGH.
+[03:42:11.080] ACTION: HJB Solver instantiated. Negentropic control loop active.
+[03:42:11.120] ACTION: BESS Cluster #1 instructed to inject counter-harmonics (Phase B).
+[03:42:11.250] STATUS: THD reduced to 1.2% (Nominal).
+[03:42:11.255] RESOLVED: Anomaly suppressed in 243ms.
+[03:42:11.260] FINANCIAL IMPACT: Prevented CENACE non-compliance penalty estimated at $12,400 USD.
 
-2 Failed downloads:
-['SNXX', 'MU']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
-
-2 Failed downloads:
-['SNXX', 'MU']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['GEV']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['MU']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['MU']: TypeError("'NoneType' object is not subscriptable")
-
-2 Failed downloads:
-['SNXX', 'MU']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNXX']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-1 Failed download:
-['MU']: TypeError("'NoneType' object is not subscriptable")
-
-5 Failed downloads:
-['SNXX', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-3 Failed downloads:
-['SNXX', 'MU', 'QQQ']: TypeError("'NoneType' object is not subscriptable")
-
-6 Failed downloads:
-['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
-
-3 Failed downloads:
-['SNXX', 'QQQ', 'SPY']: TypeError("'NoneType' object is not subscriptable")
+================================================================================
+END OF LOG
+================================================================================
