@@ -1,0 +1,132 @@
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+2 Failed downloads:
+['SNXX', 'MU']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+2 Failed downloads:
+['SNXX', 'MU']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['GEV']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['MU']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['MU']: TypeError("'NoneType' object is not subscriptable")
+
+2 Failed downloads:
+['SNXX', 'MU']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNXX']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+1 Failed download:
+['MU']: TypeError("'NoneType' object is not subscriptable")
+
+5 Failed downloads:
+['SNXX', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+3 Failed downloads:
+['SNXX', 'MU', 'QQQ']: TypeError("'NoneType' object is not subscriptable")
+
+6 Failed downloads:
+['SNXX', 'MU', 'QQQ', 'GEV', 'SPY', 'SNDK']: TypeError("'NoneType' object is not subscriptable")
+
+3 Failed downloads:
+['SNXX', 'QQQ', 'SPY']: TypeError("'NoneType' object is not subscriptable")
