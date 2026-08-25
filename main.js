@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const freqEl = document.getElementById('live-freq-counter');
 
     if (savingsEl && freqEl) {
-        let currentSavings = 28442.64;
+        let currentSavings = 231442.64;
         let currentFreq = 60.01;
 
         setInterval(() => {
