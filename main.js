@@ -236,20 +236,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Live VZA-400 Telemetry Logic
+    // Live VZA-400 Telemetry Logic - Continuous Deterministic MTD
     const savingsEl = document.getElementById('live-savings-counter');
     const freqEl = document.getElementById('live-freq-counter');
 
     if (savingsEl && freqEl) {
-        let currentSavings = 231442.64;
+        // Base rate: $0.11165 per second = ~$231,442 by day 24 of the month.
+        const baseRatePerSecond = 0.11165;
         let currentFreq = 60.01;
 
-        setInterval(() => {
-            currentSavings += (Math.random() * 2.5 + 0.5);
+        // Calculate immediately so it doesn't flash the HTML hardcoded value
+        const updateTelemetry = () => {
+            const now = new Date();
+            const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+            const secondsThisMonth = (now.getTime() - startOfMonth.getTime()) / 1000;
+            
+            // Deterministic savings based on exact real-time elapsed this month
+            // Stochastic noise added to simulate continuous HJB micro-adjustments
+            const noise = (Math.sin(now.getTime() / 1000) * 1.5) + (Math.random() * 0.8);
+            let currentSavings = (secondsThisMonth * baseRatePerSecond) + noise;
+            
             currentFreq = 60.0 + (Math.random() * 0.04 - 0.02);
             
             savingsEl.innerText = '$' + currentSavings.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
             freqEl.innerText = currentFreq.toFixed(3) + ' Hz';
-        }, 800);
+        };
+        
+        updateTelemetry();
+        setInterval(updateTelemetry, 800);
     }
 });
