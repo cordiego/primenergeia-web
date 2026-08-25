@@ -71,6 +71,56 @@
             </div>
         </div>
     </section>
+
+    <section id="macro-sen" class="section">
+        <div class="container">
+            <div class="section-header reveal fade-up text-center">
+                <h2 class="section-title">Topología del SEN (Macro-Zonas y Flujo FBSDE)</h2>
+                <p class="section-desc" style="max-width: 800px; margin: 0 auto;">
+                    Para evitar la maldición de la dimensionalidad en los 2,000+ nodos del SEN, el motor HJB modela la turbulencia macroeconómica como un continuo estocástico (Navier-Stokes), reservando el control determinístico estricto exclusivamente para los nodos físicos de PRIME.
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem;" class="reveal fade-up delay-1">
+                <div class="glass" style="padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--cyan);">
+                    <h4 style="margin-bottom: 1rem; color: var(--cyan);">NODO VZA-400</h4>
+                    <p style="margin: 0.5rem 0;"><strong>Estado:</strong> Master Edge</p>
+                    <p style="margin: 0.5rem 0;"><strong>Física:</strong> Determinística</p>
+                    <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 1rem;">
+                        <div style="background: var(--cyan); width: 85%; height: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="glass" style="padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--text-purple);">
+                    <h4 style="margin-bottom: 1rem; color: var(--text-purple);">GCR Oriental</h4>
+                    <p style="margin: 0.5rem 0;"><strong>Estado:</strong> Mean-Field</p>
+                    <p style="margin: 0.5rem 0;"><strong>Gradiente:</strong> μ = 0.82</p>
+                    <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 1rem;">
+                        <div style="background: var(--text-purple); width: 82%; height: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="glass" style="padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--text-purple);">
+                    <h4 style="margin-bottom: 1rem; color: var(--text-purple);">GCR Occidental</h4>
+                    <p style="margin: 0.5rem 0;"><strong>Estado:</strong> Mean-Field</p>
+                    <p style="margin: 0.5rem 0;"><strong>Gradiente:</strong> μ = 0.31</p>
+                    <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 1rem;">
+                        <div style="background: var(--text-purple); width: 31%; height: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="glass" style="padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--text-purple);">
+                    <h4 style="margin-bottom: 1rem; color: var(--text-purple);">GCR Peninsular</h4>
+                    <p style="margin: 0.5rem 0;"><strong>Estado:</strong> Mean-Field</p>
+                    <p style="margin: 0.5rem 0;"><strong>Gradiente:</strong> μ = 0.95</p>
+                    <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 1rem;">
+                        <div style="background: var(--text-purple); width: 95%; height: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 
@@ -137,7 +187,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="main.js?v=2"></script>
 
     <script>
         function switchSpace(space) {
