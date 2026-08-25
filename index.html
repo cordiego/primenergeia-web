@@ -1,40 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PRIMEnergeia | Sovereign Energy Infrastructure</title>
-    
-    <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    
-    <!-- Meta Descriptions -->
-    <meta name="description" content="PRIMEnergeia is building a unified technological stack for Energy, Material Science, and Wealth Sovereignty. Discover our advanced grid stabilization solutions and Perovskite solar architectures." />
-    <meta name="author" content="PRIMEnergeia S.A.S." />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.primenergeia.com/" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMEnergeia Sovereign</title>
+    <meta name="description" content="Intelligent Multi-Market Grid Control That Recovers Lost Capital. Predicting and preventing frequency deviations in real-time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="ambient-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
 
-    <!-- Open Graph (Facebook/LinkedIn) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.primenergeia.com/" />
-    <meta property="og:title" content="PRIMEnergeia | Sovereign Energy Infrastructure" />
-    <meta property="og:description" content="Building the unified stack for Energy, Material Science, and Wealth Sovereignty." />
-    <meta property="og:image" content="https://www.primenergeia.com/architecture.png" />
+    <header class="navbar glass">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">PRIMEnergeia</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#" onclick="switchSpace('grid'); return false;" id="nav-grid" class="active-nav">PRIME Grid</a>
+                <a href="#" onclick="switchSpace('granas'); return false;" id="nav-granas">Granas Materials</a>
+                <a href="#" onclick="switchSpace('power'); return false;" id="nav-power">H₂ / NH₃ Power</a>
+            </nav>
+            <a href="mailto:diego@primenergeia.com" class="btn btn-primary">Partner With Us</a>
+        </div>
+    </header>
+
+    <main>
+
+<div id="space-grid" class="space-view">
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text" style="flex: 1;">
+                <div class="compliance-banner reveal fade-up" style="margin-bottom: 2rem; display: inline-flex; gap: 1rem; align-items: center; font-size: 0.85rem;">
+                    <span class="compliance-tag glass" style="padding: 0.4rem 1rem; border-radius: 20px; border: 1px solid rgba(0, 209, 255, 0.3); color: var(--text-cyan);">Problema Resuelto: Inestabilidad en el MEM</span>
+                </div>
+                <h1 class="reveal fade-up delay-1" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem;">
+                    Control Estocástico.<br><span class="text-gradient">Cero Pérdidas.</span>
+                </h1>
+                <p class="subtitle reveal fade-up delay-2" style="margin-bottom: 1.5rem; font-size: 1.2rem; color: var(--text-muted); max-width: 600px;">
+                    Protegemos tus plantas de energía contra apagones y penalizaciones regulatorias mediante arbitraje de PML predictivo impulsado por control HJB/MFG.
+                </p>
+            </div>
+            <div class="hero-visual reveal fade-left delay-2" style="flex: 1; text-align: center;">
+                <img src="mockup.png" alt="PRIMEnergeia Software Mockup" style="max-width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px var(--glass-border);">
+            </div>
+        </div>
+    </section>
     
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://www.primenergeia.com/" />
-    <meta name="twitter:title" content="PRIMEnergeia | Sovereign Energy Infrastructure" />
-    <meta name="twitter:description" content="Building the unified stack for Energy, Material Science, and Wealth Sovereignty." />
-    <meta name="twitter:image" content="https://www.primenergeia.com/architecture.png" />
-    <script type="module" crossorigin src="/assets/index-B_S5U_F_.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D1NnSsG0.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <section id="traccion" class="section alt-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up text-center">
+                <h2 class="section-title">VZA-400 LIVE NODE TELEMETRY <span class="pulse-badge">LIVE DEPLOYMENT</span></h2>
+            </div>
+            <div class="live-pulse-container reveal fade-up delay-1">
+                <div class="pulse-main-card glass">
+                    <div class="kpi-label">Ahorro Generado para el Cliente (MTD)</div>
+                    <div id="live-savings-counter" class="text-green pulse-huge-text">$28,442.64</div>
+                </div>
+                <div class="pulse-side-cards">
+                    <div class="pulse-small-card glass">
+                        <div class="kpi-label">Frecuencia de Red</div>
+                        <div class="text-cyan pulse-huge-text" style="font-size: 2.5rem;">60.012 Hz</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="space-granas" class="space-view" style="display: none;">
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text" style="flex: 1;">
+                <h1 class="reveal fade-up delay-1" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem;">
+                    Granas Deep Tech.<br><span style="color: #9d4edd;">Límites de Albedo.</span>
+                </h1>
+                <p class="subtitle reveal fade-up delay-2" style="margin-bottom: 1.5rem; font-size: 1.2rem; color: var(--text-muted); max-width: 600px;">
+                    Módulos de perovskita y silicio ultra-eficientes optimizados vía modelos bayesianos, validados empíricamente con un 46.2% PCE a través de simulaciones de lab autónomas.
+                </p>
+            </div>
+            <div class="hero-visual reveal fade-left delay-2" style="flex: 1; text-align: center;">
+                <img src="architecture.png" alt="Granas Architecture" style="max-width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(157,78,221,0.2), 0 0 0 1px var(--glass-border);">
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div id="space-power" class="space-view" style="display: none;">
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text" style="flex: 1;">
+                <h1 class="reveal fade-up delay-1" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem;">
+                    PRIME Power.<br><span style="color: #22c55e;">H₂ & NH₃ Synthesis.</span>
+                </h1>
+                <p class="subtitle reveal fade-up delay-2" style="margin-bottom: 1.5rem; font-size: 1.2rem; color: var(--text-muted); max-width: 600px;">
+                    Nuestra infraestructura convierte el exceso de capacidad renovable directamente en hidrógeno verde y síntesis de amoníaco usando electrolizadores gestionados por IA.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</main>
+
+    <footer class="footer glass">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">PRIMEnergeia S.A.S.</span>
+                <p class="tagline">Soberanía Energética Global</p>
+                <p class="author">Lead Computational Physicist: Diego Córdoba Urrutia</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Solutions</h4>
+                    <a href="#control">Grid Control</a>
+                    <a href="#markets">Global Markets</a>
+                    <a href="#granas">Granas BO</a>
+                    <a href="#hydrogen">H₂ & NH₃ Synthesis</a>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/cordiego/PRIMEnergeia-Sovereign" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PRIMEnergeia S.A.S. Proprietary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script>
+        function switchSpace(space) {
+            document.querySelectorAll('.space-view').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.nav-links a').forEach(el => el.classList.remove('active-nav'));
+            
+            document.getElementById('space-' + space).style.display = 'block';
+            document.getElementById('nav-' + space).classList.add('active-nav');
+            
+            // Re-trigger animations
+            const reveals = document.getElementById('space-' + space).querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                el.classList.remove('active');
+                setTimeout(() => el.classList.add('active'), 50);
+            });
+        }
+    </script>
+    <style>
+        .active-nav { color: var(--text-cyan) !important; border-bottom: 2px solid var(--text-cyan); padding-bottom: 2px; }
+    </style>
+
+</body>
 </html>
